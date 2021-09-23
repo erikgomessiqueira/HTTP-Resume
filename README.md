@@ -230,6 +230,7 @@ E podemos nomear, identificar, endereçar ou manipular, estamos falando de um re
 - **Domínio** => google.com, youtube.com, ...
 
 > protocolo://dominio
+
 > **https** ://www. **google.com.br**
 
  ***Opcionais***:
