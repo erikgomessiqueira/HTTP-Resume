@@ -1,5 +1,9 @@
 # HTTP
 
+[TOC]
+
+
+
 ## Entendendo
 
 HTTP significa HyperText Transfer Protocol que traduzindo significa Protocolo de Transferência de HyperTexto.
@@ -724,15 +728,89 @@ Vamos dividir os Headers em três categorias.
 
 É um agrupamento geral de headers que servem tanto para o request quanto para o response. Nele geralmente temos:
 
-* Request URL: https://www.google.com.br/
+* **Request URL**: https://www.google.com.br/ (URL do pedido)
 
-* Request Method: GET
+* **Request Method**: GET (Método HTTP)
 
-* Status Code: 200 
+* **Status Code**: 200 (Código de Status)
 
-* Remote Address: [2800:3f0:4001:834::2003]: 443
+* **Remote Address**: [2800:3f0:4001:834::2003]: 443 (Endereço remoto)
 
-* Referrer Policy: strict-origin-when-cross-origin
+* **Referrer Policy**: strict-origin-when-cross-origin (Referência onde passa os dados, com esse valor não se pede detalhes, somente quem está enviando)
+
+#### Request headers
+
+São os headers somente do request/requisição. Vamos ver alguns:
+
+* **:authority**: www.google.com.br(Autoridade do pedido, servidor do pedido)
+* **:method**: GET (Método HTTP)
+* **:path**: / (Caminho, nesse caso /)
+* **:scheme**: https (Protocolo)
+* **accept**:text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9(Tipo de pedidos que podem ser feitos a essa URL)
+* **accept-encoding**: gzip, deflate, br(Pede a resposta de forma compactada, para enviar de uma forma mais rápida)
+* **cookie**: HSID=ADX6xdKWnHAHDYhbc; SSID=Ao74cAtkNLh48CGGb;(São dados armazenados que serviram para outras operações acontecerem)
+
+#### Response Headers
+
+São os headers somente do response/resposta. Vamos ver alguns:
+
+* **cache-control**: private, max-age=0(O controle de cache é privado e tem uma idade máxima de 0 segundos)
+* **content-length**: 41293(O tamanho do conteúdo é de 41293 bytes)
+* **content-type**: text/html; charset=UTF-8(Tipo da reposta enviada)
+* **content-encoding**: br(A códificação do conteúdo da resposta é português brasileiro)
+* **date**: Thu, 23 Sep 2021 22:27:58 GMT(data que a resposta foi feita)
+* **set-cookie**: 1P_JAR=2021-09-23-22; expires=Sat, 23-Oct-2021 22:27:58 GMT;(Sete esse cookie no navegador)
+
+### Dev Docs
+
+Usamos o Dev Docs para checar varias documentações ao mesmo tempo.
+
+#### [Site](https://devdocs.io/)
+
+#### [Aplicativo Desktop](https://www.electronjs.org/apps/devdocs-app)
+
+## Status Code
+
+Vamos ver alguns tipos de status code:
+
+### 100
+
+* 100: Continue
+
+### 200
+
+* 200: OK(GET, POST)
+
+* 201: Created (PUT)
+
+* 204: No Content (DELTE, PUT)
+
+### 300
+
+* 301: Moved Permanently
+
+* 308: Permanent Redirect
+
+* 302: Found
+
+* 307: Temporary Redirect
+
+### 400
+
+* 400: Bad Request
+* 401: Unauthorizad
+* 403: Forbidden
+* 404: Not Found
+* 405: Method Not Allowed
+* 429: Too Many Requests
+
+### 500
+
+* 500: Internal Server Error
+* 503: Service Unaviable
+
+
+
 
 
 
