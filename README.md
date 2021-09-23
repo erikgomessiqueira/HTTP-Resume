@@ -1,9 +1,5 @@
 # HTTP
 
-[TOC]
-
-
-
 ## Entendendo
 
 HTTP significa HyperText Transfer Protocol que traduzindo significa Protocolo de Transferência de HyperTexto.
